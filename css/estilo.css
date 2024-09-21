@@ -34,6 +34,8 @@ i {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+
     /* fim reset */
 }
 img{
@@ -76,6 +78,41 @@ cursor: pointer;
     gap: 1rem;
 }
 
+.header-nav {
+    display:nome;
+}
+
+.menu-mobile {
+    width: 100vw; /* v w = Vieewport Width */
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid red;
+
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+justify-content: center;
+padding: 0.5rem 1 rem;
+}
+
+/* Responsividade
+Responsivo
+ */
+
+ @media (nin-width: 768px) {
+    #header {
+        position: fixed;
+padding: 1rem 6 rem;    
+}
+.nav-mobile {
+    display: none;
+}    
+.header-nav{
+    display: flex;
+}
+ }
 /*  */
 
     
