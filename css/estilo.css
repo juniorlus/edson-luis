@@ -1,119 +1,274 @@
-:root, 
+:root,
 :root[data-theme="dark"] {
-    --primary-bg: #000;/* bg = background */
-    --primary-color: #fff;/* texto */
-    --hover-menu:#8f8f8f; 
-    --icone-cor:#1662d4;
-    --icone-tema:yellow;
+    --primary-color: #ebebeb;
+    --primary-bg: #1d1d1d;
+    --hover-menu: #898989;
+    --icon-color: #169adc;
+    --icone-tema: #d7b21e;
+    --menu-texto: #ebebeb;
 }
+
 :root[data-theme="light"] {
---cor-texto-primario: #fff;
---primary-color: #000;
+    --primary-color: #1d1d1d;
+    --primary-bg: #ebebeb;
+    --hover-menu: #898989;
+    --menu-texto:black;
+
 }
+
+ /* CSS Geral */
 
 body{
-    background:var(--primary-bg); /* fundo */
-    color: var(--primary-color--);/* cor do texto */
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    background: var(--primary-bg);  /* fundo */
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px; 
 }
-a {
+
+html[data-theme="light"] .logo { 
+    filter: invert(1);
+}
+
+a{
     text-decoration: none;
-    color: var(--primary-color)
-    
+    color: var(--primary-color);
 }
+
 a:hover{
-color:var(--hover-menu)    
+  color: var(--hover-menu)
 }
+
 i {
-    color:var(--icone-cor);
+  color: var(--icon-color);
+
 }
 
-/* reset css */
+b{
+    font-weight: 600;
+}
+
+h1{
+font-size: 2.5rem;
+font-weight: 200;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p, span {
+font-size: 1rem;
+}
+
+p{
+text-align: justify;
+}
+
+
+/* Reset CSS  */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-
-    /* fim reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
-img{
-    width: 10rem; /* largura */  
-    height: 10rem; /*altura  */
-}
+/* fim reset  */
 
-/* header */
-#header{
+/* header  */
+#header {
     display: flex;
     flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
     justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
     align-items: center;
     width: 100%;
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
     z-index: 2;
+    background: var(--primary-bg);
 }
-/* header-logo .logo */
-.logo{ /* img */
-    width: 3.25rem; /* comprimento */
-    height: 3.25rem; /* altura */
+
+/* .header-logo .logo */
+.logo {  /* img */
+    width: 3.25rem;  /* comprimento */
+    height: 3.25rem;  /* altura  */
 }
 
 .header-toggle {
     display: flex;
     justify-content: flex-end;
-
 }
-
 
 #toggleTheme {
     color: var(--icone-tema);
-font-size: 2rem;
-cursor: pointer;
+    font-size: 2rem;
+    cursor: pointer;
 }
-.menu{/* UL */
+
+.menu {   /* UL */
     display: flex;
-    align-items:center;
+    align-items: center;
     background: var(--primary-bg);
     gap: 1rem;
 }
 
-.header-nav {
-    display:nome;
+.menu-item {
+    width: 100%;
 }
 
+/* .menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem; 
+} */
+
+.header-nav {
+    display: none;
+}
+
+
+/* Menu Mobile */
+
 .menu-mobile {
-    width: 100vw; /* v w = Vieewport Width */
+    width: 100vw; /*V W = Viewport Width */
     position: fixed;
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid red;
-
 }
 
 .menu-mobile .menu-link {
     flex-direction: column;
-justify-content: center;
-padding: 0.5rem 1 rem;
+    justify-content: center;
+    padding: 0.5rem 1rem;
 }
 
-/* Responsividade
-Responsivo
- */
+.menu-link.active .menu-icon, 
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: yellow; /* cor do link */
 
- @media (nin-width: 768px) {
-    #header {
-        position: fixed;
-padding: 1rem 6 rem;    
 }
-.nav-mobile {
-    display: none;
-}    
-.header-nav{
+
+.menu-icon, .menu-text {
+    color: var(--menu-texto);
+    font-weight: 600;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    
+}
+
+.menu-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    
+}
+
+.menu-principal {
+    gap: 2rem;
+}
+
+.menu-social {
+    gap: 2rem;
+}
+
+.menu-social .menu-icon:hover {
+    color: yellow;
+}
+
+.btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--primary-color);
+    border: none;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
 }
- }
-/*  */
 
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+.btn span, .btn i {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.btn-primary span {
+    color: var(--primary-color)
+}
+
+.btn-primary {
+    border: 1px solid var(--primary-color);
+}
+
+/* Main */
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home,.projetos, .sobre, .contato {
+    /* padding 5rem 10rem */
+    padding: 5rem 10rem;
+}
+
+
+/* Responsividade 
+Responsivo
+*/
+
+@media (min-width: 768px) {
+    #header {
+       position: fixed;
+       padding: 1rem 6rem;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav{
+        display: flex;
+    }
+    .header-nav,
+    .header-toggle {
+        min-width: 30%;
+     }
+     h1{
+        font-size: 5rem;
+     }
+     h2{
+
+     }
+     h3{
+
+     }
+     #home, .projetos, .sobre {
+        padding: 8rem 6rem 4rem 6rem;
+     }
     
-    
+}
