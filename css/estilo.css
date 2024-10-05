@@ -6,6 +6,8 @@
     --icon-color: #169adc;
     --icone-tema: #d7b21e;
     --menu-texto: #ebebeb;
+    --color-title: yellow;
+    --texto-botao: yellow;
 }
 
 :root[data-theme="light"] {
@@ -13,6 +15,9 @@
     --primary-bg: #ebebeb;
     --hover-menu: #898989;
     --menu-texto:black;
+    --color-title: red;
+    --texto-botao: red;
+
 
 }
 
@@ -252,6 +257,61 @@ gap: 2rem;
     gap: 4rem;
 }
 
+.card-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-start;
+    gap: 1rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    color:var(--color-title);
+    font-weight: ;
+}
+
+.card-descricao { /*  */
+color:var(--cor-texto);   
+/* font-size: ; */
+/* font-family: ; */ 
+}
+
+.card-lista, .sobre-lista { /* estrutura lista */
+    margin-left: 1.25rem;
+    margin: 15px;
+    margin-bottom: 25px;
+
+}
+
+.card-item, .sobre-item { 
+    /* list-style: none; */
+margin-top: 5px;
+list-style: disc;
+
+}
+
+.card-button, .card-descricao{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.card-button .btn {
+    padding: .65rem 1.25rem;
+    margin-top: 15px;
+}
+
+.card-button .btn span {
+    font-size: 1rem;
+    color: var(--texto-botao);
+}
+
+.projetos .btn {
+    width: auto;
+    margin: auto;
+}
+
 
 /* Responsividade 
 Responsivo
@@ -285,4 +345,14 @@ Responsivo
         padding: 8rem 6rem 4rem 6rem;
      }
     
+}
+
+@media (min-width: 992px) {
+    .projeto-card {
+        flex-direction: row;
+    }
+
+    .card-cover{
+        width: 55%
+    }
 }
