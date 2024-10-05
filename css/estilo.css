@@ -238,6 +238,20 @@ text-align: justify;
     padding: 5rem 10rem;
 }
 
+/* Projetos */
+
+.projetos {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
 
 /* Responsividade 
 Responsivo
@@ -267,7 +281,7 @@ Responsivo
      h3{
 
      }
-     #home, .projetos, .sobre {
+     #home, .projetos, .sobre, .contato {
         padding: 8rem 6rem 4rem 6rem;
      }
     
