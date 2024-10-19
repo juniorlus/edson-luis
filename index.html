@@ -10,6 +10,10 @@
 
     <!--  Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -84,7 +88,7 @@
 </nav> <!-- Fim menu mobile -->
 
 <main id="home">
-   <div class="main-content">
+   <div class="main-content" data-aos="fade-right">
         <h1> <b> Soluções Criativas &  </b>Desenvolvimento Front-End</h1> 
         <!-- titulo / slogan-->
 
@@ -129,44 +133,40 @@
 
 </main>
 <section id="projetos" class="projetos">
-    <h2>projeto</h2>
-    <div class="projetos-container">
+    <h2 data-aos="fade-right">projeto</h2>
+
+    <div class="projetos-container" data-aos="fade-right" data-aos-display="100">
         <div class="projeto-card"> <!-- proj 1 -->
 
-            <img src="img/projetos/motors.jpg" alt=""class="card-cover">
+            <img src="img/projetos/motors.jpg" alt=""class="card-cover" >
 
             <div class="card-body">
 
             
-                <h3 class="card-title"> IR Racing </h3>
-                <p class=" card-descricao"> Nossos Cursos </p>
-                <ul class="card-lista">
+                <h3 class="card-title"data-aos="fade-right"> IR Racing </h3>
+                <p class=" card-descricao" data-aos="fade-right"> Nossos Cursos </p>
+                <ul class="card-lista"data-aos="fade-right">
                 <li class="card-item">
                         Motores
                     </li>
-                <li class="card-item">
+                <li class="card-item" data-aos="fade-right">
                         Preparação
                     </li>
-                <li class="card-item">
+                <li class="card-item" data-aos="fade-right">
                         Mecânica Automobilística
                     </li>
-                    <li class="card-item">
+                    <li class="card-item" data-aos="fade-right">
                         Pilotagem
                     </li>
                 </ul>
                 <div class="card-button">
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" data-aos="fade-right">
                         <a href="https://iracing.com.br/" target="_blank">
-                            <span> Veja a nossa Loja </span>
+                            <span> Cursos </span>
                             <i class=" bi bi-arrow-up-right"></i>
                         </a>
                     </button>
-                    <button class="btn">
-                        <a href="https://github.com/juniorlus" target="_blank">
-                            <span> Repositorio </span>
-                            <i class=" bi bi-arrow-up-right"></i>
-                        </a>
-                    </button>
+                    
                 </div>
             </div> <!-- fim card-body -->
 
@@ -174,42 +174,75 @@
 
         <div class="projeto-card card-reverse"> <!-- proj 2 -->
 
-            <img src="img/projetos/motor.jpg.jpg" alt=""class="card-cover">
+            <img src="img/projetos/motor.jpg.jpg" alt=""class="card-cover" data-aos="fade-right">
 
             <div class="card-body">
 
             
-            <h3 class="card-title"> Experiencia das pistas direto para o seu carro </h3>
-            <p class=" card-descricao"> SPA Turbo </p>
+            <h3 class="card-title" data-aos="fade-right"> Experiencia das pistas direto para o seu carro </h3>
+            <p class=" card-descricao" data-aos="fade-right"> SPA Turbo </p>
             <ul class="card-lista">
-            <li class="card-item">
+            <li class="card-item" data-aos="fade-right">
                     Alimentação ar / Combustivel
                 </li>
-            <li class="card-item">
+            <li class="card-item" data-aos="fade-right">
                     Kits Turbo e Componentes
                 </li>
-            <li class="card-item">
+            <li class="card-item" data-aos="fade-right">
                     Componentes de Motor
                 </li>
             </ul>
-            <div class="card-button">
+            <div class="card-button" data-aos="fade-right">
                 <button class="btn btn-primary">
                     <a href="https://www.spaturbo.com.br/?srsltid=AfmBOoruk6h4Q-c4v1b84jhyn-gvy8B2HdHR632hE4oSsK7o7gyDlDQh" target="_blank">
-                        <span> Ver Catalogo </span>
+                        <span> Peças </span>
                         <i class=" bi bi-arrow-up-right"></i>
                     </a>
                 </button>
-                <button class="btn">
-                    <a href="https://github.com/juniorlus" target="_blank">
-                        <span> Repositorio </span>
-                        <i class=" bi bi-arrow-up-right"></i>
-                    </a>
-                </button>
-            </div>
+                
 
         </div> <!-- fim card-body -->
         </div> <!-- Fim proj 2 -->
     </div> <!-- fim projeto container -->
+
+    <div class="projetos-container">
+        <div class="projeto-card"> <!-- proj 3 -->
+
+            <img src="img/projetos/pneus.jpg" alt=""class="card-cover" data-aos="fade-right">
+
+            <div class="card-body">
+
+            
+                <h3 class="card-title" data-aos="fade-right"> BR PRO RACING </h3>
+                <p class=" card-descricao" data-aos="fade-right"> Pneus  </p>
+                <ul class="card-lista">
+                <li class="card-item" data-aos="fade-right">
+                        Yokohama
+                    </li>
+                <li class="card-item" data-aos="fade-right">
+                        Michelin
+                    </li>
+                <li class="card-item" data-aos="fade-right">
+                        Continental 
+                    </li>
+                    <li class="card-item" data-aos="fade-right">
+                        Gt Radial 
+                    </li>
+                </ul>
+                <div class="card-button" data-aos="fade-right">
+                    <button class="btn btn-primary">
+                        <a href=https://www.brproracing.com.br/lista/acessorios-veiculos/pneus/pneus-carros-caminhonetes/?gad_source=1&gclid=EAIaIQobChMIlvn6yLyaiQMV5lVIAB1lWzBxEAAYASAAEgLuifD_BwE target="_blank">
+                            <span> Pneus  </span>
+                            <i class=" bi bi-arrow-up-right" data-aos="fade-right"></i>
+                        </a>
+                    </button>
+                    
+                    </button>
+                </div>
+            </div> <!-- fim card-body -->
+
+        </div> <!-- Fim proj 3 -->
+
 </section>
 
 <section id="sobre" class="sobre">
@@ -220,7 +253,13 @@
     <h2> contato </h2>
 </section>
 
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="Js/script.js"></script>
+
+
+
 
 
 </body>

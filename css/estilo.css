@@ -144,6 +144,7 @@ text-align: justify;
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid red;
+    z-index: 99999;
 }
 
 .menu-mobile .menu-link {
@@ -362,11 +363,13 @@ Responsivo
         flex-direction: row-reverse;
     justify-content:  space-between;
     }
+
+    
     .card-cover {
         width: 55%;
     }
         
-}
+
 
 @media (min-width: 1200px) {
 
