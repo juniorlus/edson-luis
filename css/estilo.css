@@ -53,24 +53,31 @@ b{
 }
 
 h1{
-font-size: 2.5rem;
+    font-family: "Bungee Inline", sans-serif;
+        font-size: 2.5rem;
 font-weight: 200;
+
 }
 
+
 h2{
+    
 
 }
 
 h3{
+    font-family: "Archivo Black", sans-serif;
 
 }
 
 p, span {
 font-size: 1rem;
+font-family: "Carter One", system-ui;
 }
 
 p{
 text-align: justify;
+font-family: "Archivo Black", sans-serif;
 }
 
 
@@ -322,6 +329,22 @@ font-size: 1.5rem;
     margin: auto;
 }
 
+/* sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sobre-logo{
+    width: 25%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    border-radius: 50rem;
+    border: 8px solid var (--primary-color);
+}
+
 
 /* Responsividade 
 Responsivo
@@ -370,7 +393,7 @@ Responsivo
     }
         
 
-
+}
 @media (min-width: 1200px) {
 
     h2 {
@@ -400,6 +423,7 @@ Responsivo
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
+        
     }
     h2{
         font-size: 4.5rem;
