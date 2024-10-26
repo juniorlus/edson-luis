@@ -14,80 +14,80 @@
     --primary-color: #1d1d1d;
     --primary-bg: #ebebeb;
     --hover-menu: #898989;
-    --menu-texto:black;
+    --menu-texto: black;
     --color-title: red;
     --texto-botao: red;
 
 
 }
 
- /* CSS Geral */
+/* CSS Geral */
 
-body{
-    background: var(--primary-bg);  /* fundo */
+body {
+    background: var(--primary-bg);
+    /* fundo */
     color: var(--primary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
-html[data-theme="light"] .logo { 
+html[data-theme="light"] .logo {
     filter: invert(1);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-a:hover{
-  color: var(--hover-menu)
+a:hover {
+    color: var(--hover-menu)
 }
 
 i {
-  color: var(--icon-color);
+    color: var(--icon-color);
 
 }
 
-b{
+b {
     font-weight: 600;
 }
 
-h1{
+h1 {
     font-family: "Bungee Inline", sans-serif;
-        font-size: 2.5rem;
-font-weight: 200;
+    font-size: 2.5rem;
+    font-weight: 200;
 
 }
 
 
-h2{
-    
+h2 {}
 
-}
-
-h3{
+h3 {
     font-family: "Archivo Black", sans-serif;
 
 }
 
-p, span {
-font-size: 1rem;
-font-family: "Carter One", system-ui;
+p,
+span {
+    font-size: 1rem;
+    font-family: "Carter One", system-ui;
 }
 
-p{
-text-align: justify;
-font-family: "Archivo Black", sans-serif;
+p {
+    text-align: justify;
+    font-family: "Archivo Black", sans-serif;
 }
 
 
 /* Reset CSS  */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
+
 /* fim reset  */
 
 /* header  */
@@ -105,9 +105,12 @@ font-family: "Archivo Black", sans-serif;
 }
 
 /* .header-logo .logo */
-.logo {  /* img */
-    width: 3.25rem;  /* comprimento */
-    height: 3.25rem;  /* altura  */
+.logo {
+    /* img */
+    width: 3.25rem;
+    /* comprimento */
+    height: 3.25rem;
+    /* altura  */
 }
 
 .header-toggle {
@@ -121,7 +124,8 @@ font-family: "Archivo Black", sans-serif;
     cursor: pointer;
 }
 
-.menu {   /* UL */
+.menu {
+    /* UL */
     display: flex;
     align-items: center;
     background: var(--primary-bg);
@@ -146,7 +150,8 @@ font-family: "Archivo Black", sans-serif;
 /* Menu Mobile */
 
 .menu-mobile {
-    width: 100vw; /*V W = Viewport Width */
+    width: 100vw;
+    /*V W = Viewport Width */
     position: fixed;
     bottom: 0;
     justify-content: space-between;
@@ -160,28 +165,30 @@ font-family: "Archivo Black", sans-serif;
     padding: 0.5rem 1rem;
 }
 
-.menu-link.active .menu-icon, 
+.menu-link.active .menu-icon,
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
 .menu-link:hover .menu-text {
-    color: yellow; /* cor do link */
+    color: red;
+    /* cor do link */
 
 }
 
-.menu-icon, .menu-text {
+.menu-icon,
+.menu-text {
     color: var(--menu-texto);
     font-weight: 600;
 }
 
 .menu-icon {
     font-size: 1.5rem;
-    
+
 }
 
 .menu-text {
     font-size: 0.75rem;
     text-transform: uppercase;
-    
+
 }
 
 .menu-principal {
@@ -193,7 +200,7 @@ font-family: "Archivo Black", sans-serif;
 }
 
 .menu-social .menu-icon:hover {
-    color: yellow;
+    color: red;
 }
 
 .btn {
@@ -215,7 +222,8 @@ font-family: "Archivo Black", sans-serif;
     transition: ease-in-out 0.5s;
 }
 
-.btn span, .btn i {
+.btn span,
+.btn i {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -246,7 +254,10 @@ font-family: "Archivo Black", sans-serif;
     aspect-ratio: 16/9;
 }
 
-#home,.projetos, .sobre, .contato {
+#home,
+.projetos,
+.sobre,
+.contato {
     /* padding 5rem 10rem */
     padding: 5rem 10rem;
 }
@@ -254,9 +265,9 @@ font-family: "Archivo Black", sans-serif;
 /* Projetos */
 
 .projetos {
-display: flex;
-flex-direction: column;
-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .projetos-container {
@@ -276,39 +287,43 @@ gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 1rem;
 }
 
 .card-title {
     font-size: 2rem;
-    color:var(--color-title);
-    font-weight:100;
+    color: var(--color-title);
+    font-weight: 100;
     font-family: ;
 }
 
-.card-descricao { 
-color:var(--cor-texto);   
- font-size: 1.5rem ; 
-/* font-family: ; */ 
+.card-descricao {
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    /* font-family: ; */
 }
 
-.card-lista, .sobre-lista { /* estrutura lista */
+.card-lista,
+.sobre-lista {
+    /* estrutura lista */
     margin-left: 1.25rem;
     margin-top: 15px;
     margin-bottom: 25px;
 
 }
 
-.card-item, .sobre-item { 
+.card-item,
+.sobre-item {
     /* list-style: none; */
-margin-top: 5px;
-list-style: disc;
-font-size: 1.5rem;
+    margin-top: 5px;
+    list-style: disc;
+    font-size: 1.5rem;
 
 }
 
-.card-button, .card-descricao{
+.card-button,
+.card-descricao {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -336,8 +351,8 @@ font-size: 1.5rem;
     gap: 1.5rem;
 }
 
-.sobre-logo{
-    width: 25%;
+.sobre-logo {
+    width: 50%;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
@@ -346,6 +361,86 @@ font-size: 1.5rem;
 }
 
 
+
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.sobre-icones {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.sobre-icones i {
+    font-size: 1.2rem;
+    color: red;
+}
+.sobre-conteudo1,
+.sobre-conteudo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+ .sobre-conteudo2 .col1
+ .sobre-conteudo2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+ }
+
+ .sobre-conteudo2 .col1 .row1
+ .sobre-conteudo2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+ }
+
+ .accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+ }
+
+ .accordion-header span {
+    color: var(--color-title);
+
+ }
+/* esconder as respostas */
+
+.accordion-body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: 1px solid var(--primary-color);
+}
+ .accordion-item.active .acordion-header {
+    background: var(--menu-texto);
+
+ }
+
+ .accordion-item.active .acordion-body{
+    display: flex;
+ }
+ .accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+ }
 /* Responsividade 
 Responsivo
 */
@@ -353,49 +448,71 @@ Responsivo
 
 @media (min-width: 768px) {
     #header {
-       position: fixed;
-       padding: 1rem 6rem;
+        position: fixed;
+        padding: 1rem 6rem;
     }
+
     .nav-mobile {
         display: none;
     }
-    .header-nav{
+
+    .header-nav {
         display: flex;
     }
-    .header-nav, 
+
+    .header-nav,
     .header-toggle {
         min-width: 30%;
     }
+
     h1 {
         font-size: 5rem;
     }
+
     h2 {
         font-size: 3rem;
     }
-    #home, .projetos, .sobre, .contato  {
+
+    #home,
+    .projetos,
+    .sobre,
+    .contato {
         padding: 8rem 6rem 4rem 6rem;
     }
 }
 
 
 @media (min-width: 992px) {
+
+    /* apartir de 992 */
     .projeto-card {
         flex-direction: row;
     }
-     .card-reverse {
+
+    .card-reverse {
         flex-direction: row-reverse;
-    justify-content:  space-between;
+        justify-content: space-between;
     }
 
-    
+
     .card-cover {
         width: 55%;
     }
-        
+
+    .sobre {
+        gap: 5rem;
+    }
+
+    .sobre-conteudo1,
+    .sobre-conteudo2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+    }
+
 
 }
-@media (min-width: 1200px) {
 
+@media (min-width: 1200px) {
     h2 {
         font-size: 4rem;
     }
@@ -411,30 +528,40 @@ Responsivo
     .main-content .btn {
         width: auto;
     }
-    
-    p, span, li {
+
+    p,
+    span,
+    li {
         font-size: 1.15rem;
     }
-    .card-button .btn, 
+
+    .card-button .btn,
     .descricao-button .btn {
         width: auto;
     }
 }
+
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
-        
+
     }
-    h2{
+
+    h2 {
         font-size: 4.5rem;
     }
+
     h3 {
         font-size: 3.25rem;
     }
+
     .header {
         padding: 12rem 15rem 2rem;
     }
-    .projetos, .sobre, .contato {
+
+    .projetos,
+    .sobre,
+    .contato {
         padding: 10rem 15rem 4rem;
     }
 }
