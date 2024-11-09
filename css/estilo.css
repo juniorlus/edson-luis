@@ -408,7 +408,7 @@ p {
     gap: 5rem;
  }
 
- .accordion-header {
+ .accordion-header1 {
     width: 100%;
     display: flex;
     padding: 0.75rem 1rem;
@@ -421,13 +421,13 @@ p {
     transition: ease-in-out 0.3s;
  }
 
- .accordion-header span {
+ .accordion-header1 span {
     color: var(--color-title);
 
  }
 /* esconder as respostas */
 
-.accordion-body {
+.accordion-body1 {
     display: none;
     padding: 1.25rem;
     flex-direction: column;
@@ -435,12 +435,12 @@ p {
     gap: 0.625rem;
     border: 1px solid var(--primary-color);
 }
- .accordion-item.active .acordion-header {
+ .accordion-item.active .accordion-header1 {
     background: var(--menu-texto);
 
  }
 
- .accordion-item.active .acordion-body{
+ .accordion-item.active .acordion-body1 {
     display: flex;
  }
  .accordion-item.active .bi-caret-down-fill {
@@ -472,8 +472,21 @@ p {
     text-transform: uppercase;
  }
 
+ /* roda pé */
+ footer {
+    margin-bottom: 5rem;
+ }
+
+ footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+ }
 
 
+footer a {
+    color: red
+}
 
 
 
