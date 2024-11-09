@@ -34,7 +34,7 @@ body {
     font-size: 22px;
 }
 
-html[data-theme="light"] .logo {
+html[data-theme="dark"] .logo {   /* inverter a cor do logo */
     filter: invert(1);
 }
 
@@ -64,7 +64,9 @@ h1 {
 }
 
 
-h2 {}
+h2 {
+
+}
 
 h3 {
     font-family: "Archivo Black", sans-serif;
@@ -262,7 +264,7 @@ p {
 .sobre,
 .contato {
     /* padding 5rem 10rem */
-    padding: 5rem 10rem;
+    padding: 2.5rem 1rem;
 }
 
 /* Projetos */
@@ -470,53 +472,54 @@ p {
     text-transform: uppercase;
  }
 
+
+
+
+
+
 /* Responsividade 
 Responsivo
 */
 /* Responsividade Responsivo */
 
+
+
+
+
+
+
+/* Responsividade Responsivo */
+
 @media (min-width: 768px) {
     #header {
-        position: fixed;
-        padding: 1rem 6rem;
+       position: fixed;
+       padding: 1rem 6rem;
     }
-
     .nav-mobile {
         display: none;
     }
-
-    .header-nav {
+    .header-nav{
         display: flex;
     }
-
-    .header-nav,
+    .header-nav, 
     .header-toggle {
         min-width: 30%;
     }
-
     h1 {
         font-size: 5rem;
     }
-
     h2 {
         font-size: 3rem;
     }
-
-    #home,
-    .projetos,
-    .sobre,
-    .contato {
+    #home, .projetos, .sobre  {
         padding: 8rem 6rem 4rem 6rem;
     }
     .contato {
-        padding:  6rem;
+        padding: 6rem;
     }
 }
 
-
-@media (min-width: 992px) {
-
-    /* apartir de 992 */
+@media (min-width: 992px) { /*apartir de 992 */
     .projeto-card {
         flex-direction: row;
     }
@@ -525,26 +528,23 @@ Responsivo
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-
-
+    
     .card-cover {
         width: 55%;
     }
-
     .sobre {
         gap: 5rem;
     }
-
-    .sobre-conteudo1,
-    .sobre-conteudo2 {
+    .sobre-conteudo1, 
+    .sobre-conteudo2 { 
         display: grid;
-        grid-template-columns: 34% 60%;
+        grid-template-columns: 40% 60%;
     }
-
-
-}
+        
+} /* fim 992px */
 
 @media (min-width: 1200px) {
+
     h2 {
         font-size: 4rem;
     }
@@ -560,40 +560,29 @@ Responsivo
     .main-content .btn {
         width: auto;
     }
-
-    p,
-    span,
-    li {
+    
+    p, span, li {
         font-size: 1.15rem;
     }
-
-    .card-button .btn,
+    .card-button .btn, 
     .descricao-button .btn {
         width: auto;
     }
 }
-
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
-
     }
-
-    h2 {
+    h2{
         font-size: 4.5rem;
     }
-
     h3 {
         font-size: 3.25rem;
     }
-
     .header {
         padding: 12rem 15rem 2rem;
     }
-
-    .projetos,
-    .sobre,
-    .contato {
+    .projetos, .sobre, .contato {
         padding: 10rem 15rem 4rem;
     }
 }
