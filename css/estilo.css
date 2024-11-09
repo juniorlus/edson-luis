@@ -8,6 +8,8 @@
     --menu-texto: #ebebeb;
     --color-title: yellow;
     --texto-botao: yellow;
+    --border-color: yellow;
+   
 }
 
 :root[data-theme="light"] {
@@ -17,6 +19,7 @@
     --menu-texto: black;
     --color-title: red;
     --texto-botao: red;
+    --border-color: red;
 
 
 }
@@ -441,6 +444,32 @@ p {
  .accordion-item.active .bi-caret-down-fill {
     transform: rotate(180deg);
  }
+ /* contato */
+ .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-color); /* variavel borda */
+    border-bottom: 1px solid var(--border-color); /* variavel borda  */
+
+ }
+
+ .contato p {
+    text-align: center;
+    /* font-family ""; */
+    /* color: var(); */
+ }
+
+ .contato .btn {
+    width: auto; /* correção */
+ }
+
+ .contato .email {
+    text-transform: uppercase;
+ }
+
 /* Responsividade 
 Responsivo
 */
@@ -478,6 +507,9 @@ Responsivo
     .sobre,
     .contato {
         padding: 8rem 6rem 4rem 6rem;
+    }
+    .contato {
+        padding:  6rem;
     }
 }
 
