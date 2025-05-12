@@ -1,343 +1,481 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title> Garage121 </title>
+    <meta name="keywords" content=" Garage 121, juniorlus">
+    <meta name="description" content=" garage 121, juniorlus">
+    
+   
 
-    <!-- Favicon -->
+    <!--  Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Bootstrap CSS -->
-    <!-- Version Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Inline&family=Carter+One&family=Dela+Gothic+One&family=Notable&family=Rye&display=swap"
+        rel="stylesheet">
 
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- AOS JS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
-
-    <!-- Galeria -->
-    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
-
-    <!-- Carousel / Slide -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- CSS Principal -->
-    <link rel="stylesheet" href="css/main.css">
+        <!-- Estilo css -->
+        <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
+    <header id="header">
+        <!-- navigation -->
+        <nav class="header-nav"> <!-- menu desktop -->
+            <ul class="menu menu-principal">
+                <li class="menu-item">
+                    <a class="menu-link active" href="#home">
+                        <span class="menu-text"> Home </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#projetos">
+                        <span class="menu-text"> Projetos </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#sobre">
+                        <span class="menu-text"> Sobre </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#contato">
+                        <span class="menu-text"> Contato </span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="https://shopee.com.br/garage_121?uls_trackid=51ar73ag0164&utm_content=Wwj4jg1a1mdPhD1UXfkqrcWerFy" target="_blank">
+                        <span class="menu-text"> Loja </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
-
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            
-            <!-- logo -->
-            <a href="#home" class="logo d-flex align-items-center">
-
-                <h1 class="sitename"> Agency </h1>
+        <!-- logo -->
+        <div class="header-logo">
+            <a href="#home">
+                <img class="logo" src="img/garage121.jpeg" alt="">
 
             </a>
+        </div><!--Fim area logo-->
 
-            <!-- menu -->
-            <nav id="navmenu" class="navmenu">
-                
-                <ul>
-                    <li>
-                        <a href="#home" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about"> Sobre </a>
-                    </li>
-                    <li>
-                        <a href="#services">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio </a>
-                    </li>
-                    <li> 
-                        <a href="#team"> Equipe </a>
-                    </li>
-                    <li class="dropdown"> 
-                        <a href="#">
-                            <span>Mais Opções</span>
-                            <i class="bi bi-chevron-down"> </i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Opção 1</a>
-                            </li>
-                            <li>
-                                <a href="">Opção 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i>
-            </nav>
-
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
+    </header><!-- fim header -->
 
-
-    </header>
-
-
-    <main class="main">
-
-        <section id="hero" class="hero section dark-background">
-
-            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                data-bs-interval="5000">
-
-
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <img src="img/hero/hero-carousel-1.jpg" alt="">
-
-                    <div class="carousel-container">
-                        <h2>Bem Vindo nome da EMPRESA</h2>
-                        <p> A Garage121 nasceu do sonho de um moleque apaixonado por carros desde pequeno. Com um amor genuíno pela mecânica, ele começou a desmontar e montar brinquedos, depois passou a ajudar os amigos com suas bicicletas e, finalmente, decidiu transformar sua paixão em realidade.</p>
-                        <a href="#" target="_blank" class="btn-get-started">
-                            Leia Mais...
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <img src="img/hero/hero-carousel-2.jpg" alt="">
-
-                    <div class="carousel-container">
-                        <h2>Texto teste 2</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime voluptas adipisci
-                            et minima accusantium quod repellat.</p>
-                        <a href="#" target="_blank" class="btn-get-started">
-                            Leia Mais...
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <img src="img/hero/hero-carousel-3.jpg" alt="">
-
-                    <div class="carousel-container">
-                        <h2>Texto teste 3</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime voluptas adipisci
-                            et minima accusantium quod repellat.</p>
-                        <a href="#" target="_blank" class="btn-get-started">
-                            Leia Mais...
-                        </a>
-                    </div>
-                </div>
-
-
-                <a href="#hero-carousel" role="button" data-bs-slide="prev" class="carousel-control-prev">
-
-                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"> </span>
-
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile">
+        <ul class="menu menu-mobile">
+            <li class="menu-item">
+                <a href="#home" class="menu-link active">
+                    <i class=" menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
                 </a>
-
-                <a href="#hero-carousel" role="button" data-bs-slide="next" class="carousel-control-next"
-                    aria-hidden="true">
-
-                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"> </span>
+            </li>
+            <li class="menu-item">
+                <a href="#projetos" class="menu-link">
+                    <i class="menu-icon bi bi-window-stack"> </i>
+                    <span class="menu-text"> Projetos </span>
                 </a>
+            </li>
+            <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="menu-icon bi bi-person"> </i>
+                    <span class="menu-text"> Sobre </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#contato" class="menu-link">
+                    <i class="menu-icon bi bi-telephone"> </i>
+                    <span class="menu-text">Contato</span>
+                </a>
+            </li>
+        </ul>
+    </nav> <!-- Fim menu mobile -->
 
-                <ol class="carousel-indicators"> </ol>
+    <main id="home">
+        <div class="main-content" data-aos="fade-right">
+            <h1> <b> Garage </b> 121 </h1>
+            <!-- titulo / slogan-->
 
-            </div>
+            <p> Freguesia do ó - São Paulo - SP </p>
+
+            <ul class="menu menu-social">
+
+                <li>
+                    <a href="https://github.com/juniorlus" target="_blank">
+                        <i class=" menu-icon bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/juniorlus/" target="_blank">
+                        <i class=" menu-icon bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://wa.me/+5511979698984" target="_blank">
+                        <i class=" menu-icon bi bi-whatsapp"></i></i>
+                    </a>
+                </li>
 
 
 
-        </section>
-        
-        <!-- Sobre  -->
-        <section id="about" class="about section">
 
-            <div class="container" data-aos="" data-aos-delay="">
+            </ul> <!-- Fim redes sociais -->
 
-                <div class="row gy-4">
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span> Ver projetos </span>
+                    <i class="bi bi-hand-index-thumb-fill"></i>
 
-                    <!-- Video -->
-                    <article class="col-lg-5 position-relative">
-                        <img src="img/about.jpg" class="img-fluid">
-                        <a href="https://www.youtube.com/watch?v=X3yBE_8A5WQ" 
-                        class="glightbox pulsating-play-btn"  >
-                            
-                        </a>
+                    </i>
+                </button>
+            </a>
 
-
-                    </article>
-
-                    <!-- Descrições -->
-                    <article class="col-lg-7 content ps-lg-4"> 
-                        <h3> Sobre Nós </h3>
-                        <p> A Garage121 nasceu do sonho de um moleque apaixonado por carros desde pequeno. Com um amor genuíno pela mecânica, ele começou a desmontar e montar brinquedos, depois passou a ajudar os amigos com suas bicicletas e, finalmente, decidiu transformar sua paixão em realidade. </p>
-                    <ul> 
-                        <li>
-                            <i class=" bi bi-diagram-3"></i>
-                            <div>
-                                <h5> Topico 1</h5>
-                                <p>Lorem ipsum dolor sit amet......</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class=" bi bi-fullscreen-exit"></i>
-                            <div>
-                                <h5> Topico 2</h5>
-                                <p>Lorem ipsum dolor sit amet......</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class=" bi bi-broadcast"></i>
-                            <div>
-                                <h5> Topico 3</h5>
-                                <p>Lorem ipsum dolor sit amet......</p>
-                            </div>
-                        </li>
-                        <P>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem perferendis debitis vero necessitatibus culpa officia tempore! Quo iusto, animi unde veritatis debitis fuga deleniti mollitia, perspiciatis id expedita et!
-                        </P>
-                    </ul>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Status / Estatisticas-->
-        <section id="status" class="status">
-
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-
-                        </div>
-                    </article>
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0"
-                            data-purecounter-end="257"
-                            data-purecounter-duration="5" 
-                            class="purecounter">
-                        </span>
-                            <p>
-                                <strong>Clientes</strong> 
-                                <span>Satisfeitos</span>
-                            </p>
-                            
-                        </div>
-                    </article>
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-                            
-                        </div>
-                       
-                     </article>
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-                            
-                        </div>
-                        
-                    </article>
-
-                </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/l_fEFBLiYj8"
+                    title="Os Carros mais rápidos do Brasil! Quarta classificatória SPIDFEST 2023 COMPLETA - 2:40h DE ARRANCADA"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             </div>
-
-        </section>
-
-        <!-- Serviços -->
-        <section id="services" class="services">
-
-        </section>
-
-        <!-- Parallax action Whatsapp -->
-        <section id="call-to-action" class="call-to-action">
-
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="portfolio">
-
-        </section>
-
-        <!-- FeedBcks -->
-        <section id="testimonials" class="testimonials"> 
-
-        </section>
-
-        <!-- Equipe -->
-        <section id="team" class="team">
-
-        </section>
-        <!-- Contat /Forms -->
-        <section id="contatc" class="contatc">
-
-        </section>
-
-
 
     </main>
+    <sectionn id="slide" class="slide">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src=" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/garage121.jpeg" class="d-block w-40 h-60" alt="imagens"> <!-- sub bolinha imagens  -->
+              </div>
+              <div class="carousel-item">
+                <img src=" img/garage121" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 data-aos="fade-right">projeto</h2>
+
+        <div class="projetos-container" data-aos="fade-right" data-aos-display="100">
+            <div class="projeto-card"> <!-- proj 1 -->
+
+                <img src="img/projetos/motors.jpg" alt="" class="card-cover">
+
+                <div class="card-body">
 
 
-    <footer id="" class="">
+                    <h3 class="card-title" data-aos="fade-right"> IR Racing </h3>
+                    <p class=" card-descricao" data-aos="fade-right"> Nossos Cursos </p>
+                    <ul class="card-lista" data-aos="fade-right">
+                        <li class="card-item">
+                            Motores
+                        </li>
+                        <li class="card-item" data-aos="fade-right">
+                            Preparação
+                        </li>
+                        <li class="card-item" data-aos="fade-right">
+                            Mecânica Automobilística
+                        </li>
+                        <li class="card-item" data-aos="fade-right">
+                            Pilotagem
+                        </li>
+                    </ul>
+                    <div class="card-button">
+                        <button class="btn btn-primary" data-aos="fade-right">
+                            <a href="https://iracing.com.br/" target="_blank">
+                                <span> Cursos </span>
+                                <i class=" bi bi-arrow-up-right"></i>
+                            </a>
+                        </button>
 
+                    </div>
+                </div> <!-- fim card-body -->
+
+            </div> <!-- Fim proj 1 -->
+
+            <div class="projeto-card card-reverse"> <!-- proj 2 -->
+
+                <img src="img/projetos/motor.jpg.jpg" alt="" class="card-cover" data-aos="fade-right">
+
+                <div class="card-body">
+
+
+                    <h3 class="card-title" data-aos="fade-right"> Experiencia das pistas direto para o seu carro </h3>
+                    <p class=" card-descricao" data-aos="fade-right"> SPA Turbo </p>
+                    <ul class="card-lista">
+                        <li class="card-item" data-aos="fade-right">
+                            Alimentação ar / Combustivel
+                        </li>
+                        <li class="card-item" data-aos="fade-right">
+                            Kits Turbo e Componentes
+                        </li>
+                        <li class="card-item" data-aos="fade-right">
+                            Componentes de Motor
+                        </li>
+                    </ul>
+                    <div class="card-button" data-aos="fade-right">
+                        <button class="btn btn-primary">
+                            <a href="https://www.spaturbo.com.br/?srsltid=AfmBOoruk6h4Q-c4v1b84jhyn-gvy8B2HdHR632hE4oSsK7o7gyDlDQh"
+                                target="_blank">
+                                <span> Peças </span>
+                                <i class=" bi bi-arrow-up-right"></i>
+                            </a>
+                        </button>
+
+
+                    </div> <!-- fim card-body -->
+                </div> <!-- Fim proj 2 -->
+            </div> <!-- fim projeto container -->
+
+            <div class="projetos-container">
+                <div class="projeto-card"> <!-- proj 3 -->
+
+                    <img src="img/projetos/pneus.jpg" alt="" class="card-cover" data-aos="fade-right">
+
+                    <div class="card-body">
+
+
+                        <h3 class="card-title" data-aos="fade-right"> BR PRO RACING </h3>
+                        <p class=" card-descricao" data-aos="fade-right"> Pneus </p>
+                        <ul class="card-lista">
+                            <li class="card-item" data-aos="fade-right">
+                                Yokohama
+                            </li>
+                            <li class="card-item" data-aos="fade-right">
+                                Michelin
+                            </li>
+                            <li class="card-item" data-aos="fade-right">
+                                Continental
+                            </li>
+                            <li class="card-item" data-aos="fade-right">
+                                Gt Radial
+                            </li>
+                        </ul>
+                        <div class="card-button" data-aos="fade-right">
+                            <button class="btn btn-primary">
+                                <a href=https://www.brproracing.com.br/lista/acessorios-veiculos/pneus/pneus-carros-caminhonetes/?gad_source=1&gclid=EAIaIQobChMIlvn6yLyaiQMV5lVIAB1lWzBxEAAYASAAEgLuifD_BwE
+                                    target="_blank">
+                                    <span> Pneus </span>
+                                    <i class=" bi bi-arrow-up-right" data-aos="fade-right"></i>
+                                </a>
+                            </button>
+
+                            </button>
+                        </div>
+                    </div> <!-- fim card-body -->
+
+                </div> <!-- Fim proj 3 -->
+
+    </section>
+
+    <section id="sobre" class="sobre">
+
+        <article class="sobre-conteudo1">
+
+            <img class="sobre-logo" src="img/garage121.jpeg" alt="">
+            
+            <div class="sobre-descricao">
+                <h2> Sobre mim </h2>
+                <P> A Garage121 nasceu do sonho de um moleque apaixonado por carros desde pequeno. Com um amor genuíno
+                    pela
+                    mecânica, ele começou a desmontar e montar brinquedos, depois passou a ajudar os amigos com suas
+                    bicicletas e, finalmente, decidiu transformar sua paixão em realidade.</P>
+
+                <div class="sobre-icones">
+                    <i class="bi bi-translate">
+                        <span> Inglês: Intermediário</span>
+                    </i>
+                </div>
+
+                <div class="descricao-button">
+                    <a href="http://wa.me/+5511979698984" target="_blank">
+                        <button class="btn btn-primary">
+                            <span> Conecte-se Comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                </div>
+            </div> <!--  Fim descricao -->
+
+        </article> <!-- fim conteudo 1 -->
+
+
+        <article class="sobre-conteudo2">
+
+            <div class="col1"> <!-- Coluna 1 / Vertical -->
+
+                <div class="row1"> <!-- linhas 1 / Horintal -->
+
+                    <h3> Formação </h3>
+
+                    <h4> IA e Machine Learning </h4>
+                    <span> Fev 2024 - Atualmente </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span>Cruzeiro do Sul</span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Pós Graduação </span>
+                    </div>
+                    <br> <br>
+                    <!-- nova formação  -->
+                    <h4> Sistemas para Internet </h4>
+                    <span> 2020 - 2022 </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span> FAM </span>
+                    </div>
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Tecnólogo </span>
+                    </div>
+                </div>
+
+                <div class="row2">
+
+                    <h3> Experiências </h3>
+
+                    <h4> Instrutor </h4>
+                    <span> Senai. Agosto 2012 - Atualmente. </span>
+                    <span> Instrutor de treinamentos e cursos, etc </span>
+
+                    <ul class="sobre-lista">
+                        <li class="sobre-item"> Aulas presenciais </li>
+                        <li class="sobre-item"> Aulas EAD </li>
+                    </ul>
+
+                </div> <!-- fim linha 2 -->
+
+            </div> <!-- Fim coluna 1 -->
+
+            <div class="col2"> <!-- Coluna 2 -->
+
+                <h3> Cursos </h3>
+
+                <div class="accordion1">
+
+                    <!-- Pergunta 1 -->
+                    <div class="accordion-item active">
+                        <!-- pergunta -->
+                        <button class="accordion-header1 start">
+                            <span>Desenvolvimento Front-End com Angular</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <!-- Resposta -->
+                        <div class="accordion-body1">
+                            <p>Digital Innovation One. 68H.</p>
+                            <p>Desenvolvimento Front End com Angular e desenvolver habilidades práticas para construir
+                                aplicações web modernas e responsivas, enquanto treina recursos de Inteligência
+                                Artificial para se tornar um desenvolvedor completo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="accordion-item">
+
+                        <!-- pergunta -->
+                        <button class="accordion-header1 start">
+                            <span>Google Cloud Engineer</span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <!-- resposta -->
+                        <div class="accordion-body1">
+                            <p> Senai. Fev 2024. 40H. </p>
+                            <p> Com a certificação Associate Cloud Engineer, é possível implantar aplicativos, monitorar
+                                operações e gerenciar soluções corporativas. Também é possível usar o Console do Google
+                                Cloud e a interface de linha de comando na realização de tarefas comuns baseadas na
+                                plataforma para a manutenção de uma ou mais soluções implantadas que usam os serviços
+                                gerenciados pelo Google ou autogerenciados no Google Cloud.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article> <!-- fim conteudo 2 -->
+
+
+    </section> <!-- Fim Sobre -->
+
+    <section id="contato" class="contato">
+        
+        <h2> Contato </h2>
+        <p> Estou disponivel para orientaçoes e novas conexoes.</p>
+        <ul class="menu menu-social">
+        <li>
+            <a href="https://github.com/juniorlus" target="_blank" class="menu-link">
+                <i class="menu-icon bi bi-github"></i>
+                <span> Github </span>
+            </a>
+        </li>
+    </ul> <!--  fim menu social -->
+    <!-- e-mail -->
+    <a href=" mailto: junior.luisjr@live.com"> <!-- ir para o email -->
+        <button class="btn btn-primary">
+            <span class="email"> edson.luisjr@live.com </span>
+        </button>
+
+    </a>
+    <form action="">
+        
+    </form>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2024. Portfolio desenvolvido para fins educativos com base nas aulas no 
+            <a href="https:sp.senai.br/unidade/leopoldina/" target="_blank">
+                Senai Leopoldina - SP
+
+            </a>.
+            
+                Desenvolvido por:
+            <a href="https://github.com/juniorlus" target="_blank">
+                Edson Luis 
+        </a>.
+        Sob orientação do docente
+        <a href="https://github.com/guuhferiani" target="_blank">
+            Gustavo Feriani 
+        </a>.
+        </p>
     </footer>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-
-
-
-
-    <!-- Boostrap JS Files -->
-    <!-- Boostrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> 
+        
+    </script>
 
     <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Galeria JS -->
-    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
-
-    <!-- Animação p/ Numero = Contator -->
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-
-    <!-- Load IMG -->
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
-    <!-- Filtro -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Carousel / Slide -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.js"></script>
+    <script src="Js/script.js"></script>
 
 
-    <!-- JS Principal -->
-    <script src="js/main.js"></script>
+
+
+
 </body>
 
 </html>
